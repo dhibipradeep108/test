@@ -21,3 +21,8 @@ class ForiegnObjectExample(models.Model) :
         from_fields = ("item_order_id", "item_product_id"),
         to_fields = ("order_id", "product_id")
     )
+
+class Number(models.Model) :
+    no = models.IntegerField()
+    def __str__(self):
+        return f'{self.no}'
