@@ -116,3 +116,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+
+SERIALIZATION_MODULES = {
+    "csv": "project.csv_serializer",
+    "json": "django.core.serializers.json",
+}
