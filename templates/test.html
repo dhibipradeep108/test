@@ -1,0 +1,9 @@
+{% load paginationtags %}
+{% msgbox level="error" %}
+    Please Fix all Errors
+{% endmsgbox %}
+{% msgbox level="info" %}
+    More Info.
+{% endmsgbox %}
+{% current_time "%Y-%m-%d %I:%M %p" %}
+<p>The time is {{ current_time }}.</p>
