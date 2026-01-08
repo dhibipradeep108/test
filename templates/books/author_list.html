@@ -1,0 +1,10 @@
+{% if authors %}
+    <strong>Authors : </strong>
+    <ol>
+    {% for author in authors %}
+        <li>{{ author.name }}</li>
+    {% endfor %}
+    </ol>
+{% else %}
+    <strong>No authors yet</strong>
+{% endif %}
